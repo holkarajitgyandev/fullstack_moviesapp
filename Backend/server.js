@@ -5,7 +5,11 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+orogin:["https://fullstack-moviesapp-api.vercel.app/"],
+methods:["POST","GET"],
+credentials:true
+}));
 app.use(express.json());
 
 mongoose
