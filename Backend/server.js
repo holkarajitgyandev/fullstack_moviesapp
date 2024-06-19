@@ -13,7 +13,7 @@ credentials:true
 app.use(express.json());
 
 mongoose
-  .connect("mongodb+srv://holkarajitgyandev:Hgfe9dcba@cluster0.wwtpzs9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/netflix", {
+  .connect("mongodb+srv://holkarajitgyandev:Hgfe9dcba@cluster0.wwtpzs9.mongodb.net/netflix?retryWrites=true&w=majority&appName=Cluster", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
